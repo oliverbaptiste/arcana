@@ -1,0 +1,57 @@
+body {
+  font-family: 'Merriweather';
+  text-align: center;
+}
+
+i {
+  font-style: normal;
+}
+
+.spades,
+.clubs {
+  color: black;
+}
+
+.hearts,
+.diamonds {
+  color: red;
+}
+
+.no-revoke .diamonds {
+  color: blue;
+}
+
+.no-revoke .clubs {
+  color: green;
+}
+
+.joker.little {
+/*   color: red; */
+}
+
+.card-back {
+  color: darkblue;
+}
+
+ul { list-style: none; padding: 0; }
+ul li {
+  font-size: 200%;
+  line-height: 1.5;
+}
+
+ul li ul li {
+  font-size: 300%;
+  display: inline-block;
+}
+
+.cards li ul li {
+  font-family: "Apple Symbols";
+}
+
+.inactive {
+  color: grey;
+}
+
+.moved {
+  display: none;
+}

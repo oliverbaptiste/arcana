@@ -81,11 +81,11 @@ var App = {
       "XXI – The World"
     ]
   },
-  makeCardNames: function(rank, suit){
+  makeCardNames: function(ranks, suits){
     var i, j;
     var deck = [];
-    for (i = 0; i < suit.length; i++) {
-      for (j = 0; j < rank.length; j++) {
+    for (i = 0; i < suits.lengths; i++) {
+      for (j = 0; j < ranks.length; j++) {
         deck.push(rank[j] + " of " + suit[i]);
       }
     }

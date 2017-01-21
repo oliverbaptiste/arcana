@@ -9,6 +9,8 @@ This is an experimental data model for playing card decks.
     * `ranks` array holds rank name/value (Ace, 2, 3 etc. thru King)
     * `suits` array holding strings of suit names
     * `arcanaRanks`, `arcanaSuits`, and `arcanaTrumps` arrays for generating Tarot decks
-  * `makeCardNames(ranksArray, suitsArray)` method
+  * `makeCardNames(ranks, suits)` method
   * `renderCards()` method
   * `init()` method
+
+Based on [this HTML/CSS experiment](playingCards.html).
