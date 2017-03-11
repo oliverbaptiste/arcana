@@ -18,7 +18,7 @@ var suits = [
 ];
 var ranks = [
   {
-    pip: {
+    pipCard: {
       1: 'Ace',
       2: 'Two',
       3: 'Three',
@@ -28,9 +28,10 @@ var ranks = [
       7: 'Seven',
       8: 'Eight',
       9: 'Nine',
-      10: 'Ten'
-    },
-    court: {
+      10: 'Ten' }
+  },
+  {
+    courtCard: {
       standard: [ 'Jack', 'Queen', 'King' ],
       tarot: [ 'Page', 'Knight', 'Queen', 'King' ]
     }
