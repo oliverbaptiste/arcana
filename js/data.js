@@ -10,75 +10,133 @@ var DATA = {
   },
   RANKS: [
     {
-      courtCard: {
-        {
-          standard: "Jack",
-          symbol: "J",
-          tarot: "Page"
-        },
-        {
-          standard: "Knight",
-          symbol: "C",
-          tarot: "Knight"
-        },
-        {
-          standard: "Queen",
-          symbol: "Q",
-          tarot: "Queen"
-        },
-        {
-          standard: "King",
-          symbol: "K"
-          tarot: "King"
-        }
-      }
+      name: {
+        standard: "Ace"
+      },
+      symbol: {
+        standard: "A",
+        nouveau: "1",
+      },
+      type: "pip"
     },
     {
-      pipCard: {
-        {
-          name: "Ace"
-          symbol: {
-            standard: "A",
-            nouveau: "1"
-          }
-        },
-        {
-          name: "Two"
-          symbol: "2"
-        },
-        {
-          name: "Three"
-          symbol: "3"
-        },
-        {
-          name: "Four"
-          symbol: "4"
-        },
-        {
-          name: "Five"
-          symbol: "5"
-        },
-        {
-          name: "Six"
-          symbol: "6"
-        },
-        {
-          name: "Seven"
-          symbol: "7"
-        },
-        {
-          name: "Eight"
-          symbol: "8"
-        },
-        {
-          name: "Nine"
-          symbol: "9"
-        },
-        {
-          name: "Ten"
-          symbol: "10"
-        },
-      }
+      name: {
+        standard: "Deuce",
+        tarot: "Two"
+      },
+      symbol: {
+        standard: "2"
+      },
+      type: "pip",
+    },
+    {
+      name: {
+        standard: "Three"
+      },
+      symbol: {
+        standard: "3"
+      },
+      type: "pip"
+    },
+    {
+      name: {
+        standard: "Four"
+      },
+      symbol: {
+        standard: "4"
+      },
+      type: "pip"
+    },
+    {
+      name: {
+        standard: "Five"
+      },
+      symbol: {
+        standard: "5"
+      },
+      type: "pip"
+    },
+    {
+      name: {
+        standard: "Six"
+      },
+      symbol: {
+        standard: "6"
+      },
+      type: "pip"
+    },
+    {
+      name: {
+        standard: "Seven"
+      },
+      symbol: {
+        standard: "7"
+      },
+      type: "pip"
+    },
+    {
+      name: {
+        standard: "Eight"
+      },
+      symbol: {
+        standard: "8"
+      },
+      type: "pip"
+    },
+    {
+      name: {
+        standard: "Nine"
+      },
+      symbol: {
+        standard: "9"
+      },
+      type: "pip"
+    },
+    {
+      name: {
+        standard: "Ten"
+      },
+      symbol: {
+        standard: "10"
+      },
+      type: "pip"
+    },
+    {
+      name: {
+        standard: "Jack",
+        tarot: "Page"
+      },
+      symbol: {
+        standard: "J"
+      },
+      type: "court"
+    },
+    {
+      name: {
+        standard: "Knight"
+      },
+      symbol: {
+        standard: "C"
+      },
+      type: "court"
+    },
+    {
+      name: {
+        standard: "Queen"
+      },
+      symbol: {
+        standard: "Q"
+      },
+      type: "court"
+    },
+    {
+      standard: {
+        name: "King"
+      },
+      symbol: {
+        standard: "K"
+      },
+      type: "court"
     }
   ],
   SUITS: [
@@ -115,7 +173,7 @@ var DATA = {
       tarot: { name: "Wands" }
     }
   ],
-  TRUMPS:  [
+  TRUMPS: [
     {
       nouveau: "The Fool",
       waite: "The Fool",

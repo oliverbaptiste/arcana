@@ -47,3 +47,5 @@ Based on [this HTML/CSS experiment](https://codepen.io/ogab/pen/peXpqW) and the 
 * http://www.tarotpedia.com/
 * http://www.ovdiyenko.com/
 * https://en.wikipedia.org/wiki/Template:Cards
+* http://oll.libertyfund.org/pages/new-playing-cards-for-the-french-republic-1793-94
+* https://digitalcollections.nypl.org/collections/playing-cards-engineering#/?tab=about
