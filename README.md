@@ -5,7 +5,7 @@
 * the 56-card *Minor Arcana* tarot deck,
 * and the 22-card *Major Arcana* tarot deck.
 
-Based on [this HTML/CSS experiment](playingCards.html) and the following references:  
+Based on [this HTML/CSS experiment](https://codepen.io/ogab/pen/peXpqW) and the following references:  
 
 * https://en.wikipedia.org/wiki/Playing_cards_in_Unicode
 * https://en.wikipedia.org/wiki/Tarot_Nouveau
