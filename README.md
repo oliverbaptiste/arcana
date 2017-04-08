@@ -7,9 +7,10 @@
 
 Based on [this HTML/CSS experiment](https://codepen.io/ogab/pen/peXpqW) and the following references:  
 
-* https://en.wikipedia.org/wiki/Playing_cards_in_Unicode
+* https://en.wikipedia.org/wiki/Minor_Arcana
 * https://en.wikipedia.org/wiki/Tarot_Nouveau
 * https://en.wikipedia.org/wiki/Rider-Waite_tarot_deck
+* https://en.wikipedia.org/wiki/Playing_cards_in_Unicode
 * http://www.unicode.org/charts/PDF/U1F0A0.pdf
 
 
