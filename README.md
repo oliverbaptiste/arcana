@@ -31,6 +31,13 @@ Based on [this HTML/CSS experiment](https://codepen.io/ogab/pen/peXpqW) and the 
 [*data.js*](js/data.js):
 * `DATA` object:
   * `CARD_GLYPHS` object
+    * `spades` array
+    * `hearts` array
+    * `diamonds` array
+    * `clubs` array
+    * `trumps` array
+    * `jokers` array
+    * `back` array
   * `RANKS` object
   * `SUITS` object
   * `TRUMPS` object
