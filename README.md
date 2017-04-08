@@ -38,3 +38,4 @@ Based on [this HTML/CSS experiment](playingCards.html) and the following referen
 * http://www.egreenway.com/tarot/
 * http://www.tarotpedia.com/
 * http://www.ovdiyenko.com/
+* https://en.wikipedia.org/wiki/Template:Cards
