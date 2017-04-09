@@ -162,7 +162,7 @@ var data = {
         pip: "♦",
         color: "red"
       },
-      tarot: { name: "Pentacles" }
+      tarot: { name: "Pentacles" } // Coins
     },
     {
       standard: {
