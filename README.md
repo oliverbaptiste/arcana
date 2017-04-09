@@ -5,8 +5,11 @@
 * the 56-card *Minor Arcana* tarot deck,
 * and the 22-card *Major Arcana* tarot deck.
 
-Based on [this HTML/CSS experiment](https://codepen.io/ogab/pen/peXpqW) and the following references:  
+Based on `playingCards.html` HTML/CSS experiment now living in this [CodePen pen](https://codepen.io/ogab/pen/peXpqW).
 
+Developed in conjunction with this [REPL.it session](https://repl.it/HBzu/110).
+
+## References
 * https://en.wikipedia.org/wiki/Minor_Arcana
 * https://en.wikipedia.org/wiki/Tarot_Nouveau
 * https://en.wikipedia.org/wiki/Rider-Waite_tarot_deck
@@ -14,7 +17,7 @@ Based on [this HTML/CSS experiment](https://codepen.io/ogab/pen/peXpqW) and the 
 * http://www.unicode.org/charts/PDF/U1F0A0.pdf
 
 
-## Application
+## Application (current version)
 [*app.js*](js/app.js):
 * `App` object:
   * `data` object:
@@ -29,18 +32,11 @@ Based on [this HTML/CSS experiment](https://codepen.io/ogab/pen/peXpqW) and the 
 
 ## Data refactoring for next version
 [*data.js*](js/data.js):
-* `DATA` object:
-  * `CARD_GLYPHS` object
-    * `spades` array
-    * `hearts` array
-    * `diamonds` array
-    * `clubs` array
-    * `trumps` array
-    * `jokers` array
-    * `back` array
-  * `RANKS` object
-  * `SUITS` object
-  * `TRUMPS` object
+* Properties of `data` object:
+  * `glyphs` array
+  * `ranks` object
+  * `suits` object
+  * `trumps` object
 
 ## Additional References & Inspiration
 * http://www.egreenway.com/tarot/
