@@ -33,6 +33,7 @@ Based on an experiment now living in [CodePen](https://codepen.io/ogab/pen/peXpq
   * 16 court
   * 3 jokers
   * 22 trumps
+* ...within a **complete, stripped, or multi-pack deck**...
 * ...with a **customizable card back**...
 * ...and **be accessible for users with visual disabilities**.
 * **It should utilize all 82 Unicode card glyphs**.
