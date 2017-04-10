@@ -1,4 +1,4 @@
-# Arcana #
+## Arcana #
 **Arcana** models, generates, and manipulates playing card sets, decks, and packs.
 
 Inspired by the Playing Cards range (1F0A0–1F0FF) of Unicode.
@@ -36,7 +36,7 @@ Based on an experiment now living in [CodePen](https://codepen.io/ogab/pen/peXpq
 * ...with a **customizable card back**...
 * ...and **be accessible for users with visual disabilities**.
 * **It should utilize all 82 Unicode card glyphs**.
-  * Since the 22 trump glyphs don't yet exist in any default macOS font, **it should provide a Trumps icon font**.
+  * Since the 22 trump glyphs don't yet exist in any default macOS font, **it should provide a Trumps icon font**. Consider using [Symbola](http://users.teilar.gr/~g1951d/Symbola.zip) from [George Douros](http://users.teilar.gr/~g1951d/).
 
 ## Code explanation ##
 
