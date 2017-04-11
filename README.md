@@ -42,7 +42,7 @@ Based on an experiment now living in [CodePen](https://codepen.io/ogab/pen/peXpq
 ## About the code ##
 
 ### Current version: 0.2.0 ###
-[*app.js*](js/app.js):
+[*app.js*](scripts/app.js):
 * `App` object:
   * `DATA` object:
     * `GLYPHS` array
@@ -54,7 +54,7 @@ Based on an experiment now living in [CodePen](https://codepen.io/ogab/pen/peXpq
   * `init` method
 
 ### Previous version: 0.1.0 ###
-[*app-0.1.0.js*](js/app-0.1.0.js):
+[*app-0.1.0.js*](scripts/app-0.1.0.js):
 * `App` object:
   * `data` object:
     * `glyphs` array holds strings of each cards as a Unicode glyph
