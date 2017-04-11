@@ -1,0 +1,26 @@
+// normalize.css is requested immediately before this sheet
+// in the <head> of index.html
+
+@font-face {
+  font: {
+    family: 'symbola-arcana';
+    style: normal;
+    weight: normal;
+  }
+  src:  url('fonts/symbola-arcana.woff2') format('woff2'),
+        url('fonts/symbola-arcana.woff')  format('woff');
+}
+body {
+  text-align: center;
+}
+ol {
+  list-style: none;
+  padding: 0;
+  li {
+    display: inline-block;
+    width: 200px;
+  }
+}
+.glyph {
+  font-size: 128px;
+}

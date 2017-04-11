@@ -37,12 +37,24 @@ Based on an experiment now living in [CodePen](https://codepen.io/ogab/pen/peXpq
 * ...with a **customizable card back**...
 * ...and **be accessible for users with visual disabilities**.
 * **It should utilize all 82 Unicode card glyphs**.
-  * Since the 22 trump glyphs don't yet exist in any default macOS font, **it should provide a Trumps icon font**. Consider using [Symbola](http://users.teilar.gr/~g1951d/Symbola.zip) from [George Douros](http://users.teilar.gr/~g1951d/).
+  * Since the 22 trump glyphs don't yet exist in any default macOS font, **it should include a card glyph webfont**: a subset of [Symbola](http://users.teilar.gr/~g1951d/Symbola.zip) from [George Douros](http://users.teilar.gr/~g1951d/) generated using [Font Squirrel's  Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator).
 
-## Code explanation ##
+## About the code ##
 
-### Current API ###
+### Current version: 0.2.0 ###
 [*app.js*](js/app.js):
+* `App` object:
+  * `DATA` object:
+    * `GLYPHS` array
+    * `RANKS` object
+    * `SUITS` object
+    * `TRUMP` object
+  * `generateDeck()` method
+  * `renderDeck(deck)` method
+  * `init` method
+
+### Previous version: 0.1.0 ###
+[*app-0.1.0.js*](js/app-0.1.0.js):
 * `App` object:
   * `data` object:
     * `glyphs` array holds strings of each cards as a Unicode glyph
@@ -53,14 +65,6 @@ Based on an experiment now living in [CodePen](https://codepen.io/ogab/pen/peXpq
   * `makeCardNames(ranks, suits)` method
   * `renderCards()` method
   * `init()` method
-
-### Future API in progress ###
-[*data.js*](js/data.js):
-* Properties of `data` object:
-  * `glyphs` array
-  * `ranks` object
-  * `suits` object
-  * `trumps` object
 
 ## References ##
 * https://en.wikipedia.org/wiki/Minor_Arcana
