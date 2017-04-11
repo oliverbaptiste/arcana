@@ -7,8 +7,8 @@
     style: normal;
     weight: normal;
   }
-  src:  url('fonts/symbola-arcana.woff2') format('woff2'),
-        url('fonts/symbola-arcana.woff')  format('woff');
+  src:  url('/fonts/symbola-arcana.woff2') format('woff2'),
+        url('/fonts/symbola-arcana.woff')  format('woff');
 }
 body {
   text-align: center;
@@ -19,8 +19,10 @@ ol {
   li {
     display: inline-block;
     width: 200px;
+    margin: 1em;
+    .glyph {
+      font-size: 128px;
+      font-family: 'symbola-arcana';
+    }
   }
-}
-.glyph {
-  font-size: 128px;
 }
