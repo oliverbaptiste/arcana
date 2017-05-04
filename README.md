@@ -41,8 +41,24 @@ Based on an experiment now living in [CodePen](https://codepen.io/ogab/pen/peXpq
 
 ## About the code ##
 
-### Current version: 0.2.0 ###
-[*app.js*](scripts/app.js):
+### Current version: 0.3.0 ###
+
+Adding "Show All Card Backs/Faces" buttons and ability to click on cards to show their faces.
+
+[*arcana-0.3.0.js*](scripts/arcana-0.3.0.js):
+* `App` object
+  * `DATA` array
+    * `GLYPHS` array
+    * `RANKS` array
+    * `SUITS` array
+    * `TRUMP` array
+  * `bindEvents()` method
+  * `generateDeck()` method
+  * `renderDeck(deck)` method
+  * `init` method
+
+### Previous version: 0.2.0 ###
+[*arcana-0.2.0.js*](scripts/arcana-0.2.0.js):
 * `App` object:
   * `DATA` object:
     * `GLYPHS` array
@@ -54,7 +70,7 @@ Based on an experiment now living in [CodePen](https://codepen.io/ogab/pen/peXpq
   * `init` method
 
 ### Previous version: 0.1.0 ###
-[*app-0.1.0.js*](scripts/app-0.1.0.js):
+[*arcana-0.1.0.js*](scripts/arcana-0.1.0.js):
 * `App` object:
   * `data` object:
     * `glyphs` array holds strings of each cards as a Unicode glyph
