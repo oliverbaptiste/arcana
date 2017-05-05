@@ -21,7 +21,7 @@ body {
 }
 
 .glyph {
-  // font-family: 'symbola-arcana';
+  font-family: 'symbola-arcana';
   font-size: 1200%;
   display: none;
 }
@@ -29,6 +29,7 @@ body {
 .card::before {
   color: darkblue;
   content: '\1F0A0';
+  font-family: 'symbola-arcana';
   font-size: 1200%;
 }
 

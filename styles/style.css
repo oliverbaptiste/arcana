@@ -11,12 +11,14 @@ body {
   display: inline-block; }
 
 .glyph {
+  font-family: 'symbola-arcana';
   font-size: 1200%;
   display: none; }
 
 .card::before {
   color: darkblue;
   content: '\1F0A0';
+  font-family: 'symbola-arcana';
   font-size: 1200%; }
 
 .card p {
