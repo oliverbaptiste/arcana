@@ -41,7 +41,15 @@ Based on an experiment now living in [CodePen](https://codepen.io/ogab/pen/peXpq
 
 ## About the code ##
 
-### Current version: 0.3.0 ###
+### Current version: 0.4.0 ###
+
+* Integrated [Web Speech API](https://github.com/mdn/web-speech-api): the name of a clicked card is spoken.
+* Converted trump card numbering from Roman to Arabic.
+* Added CSS class for card **rank**.
+
+### Previous versions: ###
+
+#### 0.3.0 ####
 
 Adding "Show All Card Backs/Faces" buttons and ability to click on cards to show their faces.
 
@@ -57,7 +65,7 @@ Adding "Show All Card Backs/Faces" buttons and ability to click on cards to show
   * `renderDeck(deck)` method
   * `init` method
 
-### Previous version: 0.2.0 ###
+#### 0.2.0 ####
 [*arcana-0.2.0.js*](scripts/arcana-0.2.0.js):
 * `App` object:
   * `DATA` object:
@@ -69,7 +77,7 @@ Adding "Show All Card Backs/Faces" buttons and ability to click on cards to show
   * `renderDeck(deck)` method
   * `init` method
 
-### Previous version: 0.1.0 ###
+#### 0.1.0 ####
 [*arcana-0.1.0.js*](scripts/arcana-0.1.0.js):
 * `App` object:
   * `data` object:
