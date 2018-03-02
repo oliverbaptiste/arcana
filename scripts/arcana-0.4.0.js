@@ -33,28 +33,28 @@ var App = {
       [ 'Clubs', '♣', 'black', 'Wands' ]
     ],
     TRUMPS: [
-      [ '', 'The Fool', 'The Fool' ],
-      [ 'I', 'Individual', 'The Magician' ],
-      [ 'II', 'Childhood', 'The High Priestess' ],
-      [ 'III', 'Youth', 'The Empress' ],
-      [ 'IV', 'Maturity', 'The Emperor' ],
-      [ 'V', 'Old Age', 'The Hierophant' ],
-      [ 'VI', 'Morning', 'The Lovers' ],
-      [ 'VII', 'Afternoon', 'The Chariot' ],
-      [ 'VIII', 'Evening', 'Strength' ],
-      [ 'IX', 'Night', 'The Hermit' ],
-      [ 'X', 'Earth and Air', 'Wheel of Fortune' ],
-      [ 'XI', 'Water and Fire', 'Justice' ],
-      [ 'XII', 'Dance', 'The Hanged Man' ],
-      [ 'XIII', 'Shopping', 'Death' ],
-      [ 'XIV', 'Open Air', 'Temperance' ],
-      [ 'XV', 'Visual Arts', 'The Devil' ],
-      [ 'XVI', 'Spring', 'The Tower' ],
-      [ 'XVII', 'Summer', 'The Star' ],
-      [ 'XVIII', 'Autumn', 'The Moon' ],
-      [ 'XIX', 'Winter', 'The Sun' ],
-      [ 'XX', 'The Game', 'Judgement' ],
-      [ 'XXI', 'Collective', 'The World' ]
+      [ '0', 'The Fool', 'The Fool' ],
+      [ '1', 'Individual', 'The Magician' ],
+      [ '2', 'Childhood', 'The High Priestess' ],
+      [ '3', 'Youth', 'The Empress' ],
+      [ '4', 'Maturity', 'The Emperor' ],
+      [ '5', 'Old Age', 'The Hierophant' ],
+      [ '6', 'Morning', 'The Lovers' ],
+      [ '7', 'Afternoon', 'The Chariot' ],
+      [ '8', 'Evening', 'Strength' ],
+      [ '9', 'Night', 'The Hermit' ],
+      [ '10', 'Earth and Air', 'Wheel of Fortune' ],
+      [ '11', 'Water and Fire', 'Justice' ],
+      [ '12', 'Dance', 'The Hanged Man' ],
+      [ '13', 'Shopping', 'Death' ],
+      [ '14', 'Open Air', 'Temperance' ],
+      [ '15', 'Visual Arts', 'The Devil' ],
+      [ '16', 'Spring', 'The Tower' ],
+      [ '17', 'Summer', 'The Star' ],
+      [ '18', 'Autumn', 'The Moon' ],
+      [ '19', 'Winter', 'The Sun' ],
+      [ '20', 'The Game', 'Judgement' ],
+      [ '21', 'Collective', 'The World' ]
     ]
   },
   bindEvents: function() {
@@ -102,7 +102,7 @@ var App = {
     deck.forEach(function(e) {
       if (e.type === 'trump') {
         if (e.rank) {
-          d.push(e.rank + ' ' + e.theme);
+          d.push(e.rank + ': ' + e.theme);
         } else {
           d.push(e.theme);
         }
@@ -126,12 +126,28 @@ var App = {
       newDiv.appendChild(newP);
       newDiv.addEventListener('click', function() {
         $(this).toggleClass('flipped');
-        App.speakText();
+        var thisCardName = $('p', this).text()
+        App.speakText(thisCardName);
       });
     });
   },
+  speechSynth: window.speechSynthesis,
   speakText: function(phrase) {
     console.log('App.speakText has been invoked.')
+
+    if (App.speechSynth.speaking) {
+      console.error('speechSynthesis.speaking');
+      return;
+    }
+
+    var utterThis = new SpeechSynthesisUtterance(phrase);
+    utterThis.onend = function (event) {
+        console.log('SpeechSynthesisUtterance.onend');
+    }
+    utterThis.onerror = function (event) {
+        console.error('SpeechSynthesisUtterance.onerror');
+    }
+    App.speechSynth.speak(utterThis);
   },
   init: function() {
     console.log('App.init() invoked.');
