@@ -1,6 +1,8 @@
 ## Arcana #
 **Arcana** models, generates, and manipulates playing card sets, decks, and packs.
 
+![Alt text](images/arcana-81-cards.png)
+
 Inspired by the Playing Cards range (1F0A0–1F0FF) of Unicode.
 
 Based on an experiment now living in [CodePen](https://codepen.io/ogab/pen/peXpqW) and [repl.it](https://repl.it/HBzu/110).
