@@ -107,3 +107,5 @@ Adding "Show All Card Backs/Faces" buttons and ability to click on cards to show
 * https://en.wikipedia.org/wiki/Template:Cards
 * http://oll.libertyfund.org/pages/new-playing-cards-for-the-french-republic-1793-94
 * https://digitalcollections.nypl.org/collections/playing-cards-engineering#/?tab=about
+* https://archive.org/details/aen4317.0001.001.umich.edu
+* https://archive.org/details/cu31924029917576
