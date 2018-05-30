@@ -5,7 +5,7 @@
 
 Inspired by the Playing Cards range (1F0A0–1F0FF) of Unicode.
 
-Based on an experiment now living in [CodePen](https://codepen.io/ogab/pen/peXpqW) and [repl.it](https://repl.it/HBzu/110).
+Based on experiments developed in [CodePen](https://codepen.io/ogab/pen/peXpqW) and [repl.it](https://repl.it/HBzu/110).
 
 ## Possible applications ##
   * gameplay
@@ -17,8 +17,8 @@ Based on an experiment now living in [CodePen](https://codepen.io/ogab/pen/peXpq
 
 ## Application requirements ##
 * **It should use all extant traditional game and divination suit names**...
-  * French/Anglo-American: Spades, Hearts, Diamonds, Clubs
-  * Latin/Spanish/Italian:  Swords, Cups, Coins (Pentacles), Wands (Batons)
+  * French/Anglo-American: Spades ♠️, Hearts ♥️, Diamonds ♦️, Clubs ♣️
+  * Latin/Spanish/Italian:  Swords ⚔️, Cups 🍵, Coins (Pentacles) 💰, Wands (Batons) 🏏
   * German: Leaves, Hearts, Bells, Acorns
   * Swiss: Shields, Roses, Bells, Acorns
 * ...in **multiple languages**...
