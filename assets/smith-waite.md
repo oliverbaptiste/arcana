@@ -6,7 +6,8 @@ Instructions excerpted from *The Key to the Tarot*, by Arthur Edward Waite
 
 ## The Greater Arcana & Their Divinatory Meanings
 
-1. **The Magician**—Skill, diplomacy, address, sickness, pain, loss, disaster, self-confidence, will, the Querent himself (if male). *Reversed:* Physician, Magus, mental illness, disgrace, disquiet. 
+0. **The Fool**—
+1. **The Magician**—Skill, diplomacy, address, sickness, pain, loss, disaster, self-confidence, will, the Querent himself (if male). *Reversed:* Physician, Magus, mental illness, disgrace, disquiet.
 2. **The High Priestess**—Secrets, mystery, the future as yet unrevealed, the woman who interests the Querent (if male); the Querant (if female); silence, tenacity; wisdom, science, surface knowledge.
 3. **The Empress**—
 4. **The Emperor**—
@@ -27,7 +28,6 @@ Instructions excerpted from *The Key to the Tarot*, by Arthur Edward Waite
 19. **The Sun**—
 20. **The Last Judgement**—
 21. **The World**—
-0. **The Fool**—
 
 ## The Lesser Arcana
 

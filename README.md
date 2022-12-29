@@ -8,16 +8,7 @@ Inspired by the Playing Cards range (1F0A0–1F0FF) of Unicode.
 
 Based on experiments developed in [CodePen](https://codepen.io/ogab/pen/peXpqW) and [repl.it](https://repl.it/HBzu/110).
 
-## Possible applications
-
-* gameplay
-* game design
-* divination
-* cardistry and magic utilities
-* history of playing cards and games
-* probability/statistical analysis
-
-## Application requirements
+## Project goal
 
 * **It should use all extant traditional game and divination suit names**…
   * French/Anglo-American: Spades ♠️, Hearts ♥️, Diamonds ♦️, Clubs ♣️
@@ -40,9 +31,18 @@ Based on experiments developed in [CodePen](https://codepen.io/ogab/pen/peXpqW) 
   * 22 trumps
 * …within a **complete, stripped, or multi-pack deck**…
 * …with a **customizable card back**…
-* ...and **be accessible for users with visual disabilities**.
+* …and **be accessible for users with visual disabilities**.
 * **It should utilize all 82 Unicode card glyphs**.
   * Since the 22 trump glyphs don't yet exist in any default macOS font, **it should include a card glyph webfont**: a subset of [Symbola](http://users.teilar.gr/~g1951d/Symbola.zip) from [George Douros](http://users.teilar.gr/~g1951d/) generated using [Font Squirrel's  Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator).
+
+## Possible applications
+
+* gameplay
+* game design
+* divination
+* cardistry and magic utilities
+* history of playing cards and games
+* probability/statistical analysis
 
 ## About the code
 
