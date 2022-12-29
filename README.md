@@ -1,41 +1,43 @@
 # Arcana
 
-**Arcana** models, generates, and manipulates playing card sets, decks, and packs.
+_Arcana_ is a tool for creating "Unicode" playing card decks.
 
-![Alt text](images/arcana-81-cards.png)
-
-Inspired by the Playing Cards range (1F0A0–1F0FF) of Unicode.
+![Arcana: the 81 Plaing Cards of Unicode](images/arcana-81-cards.png)
 
 Based on experiments developed in [CodePen](https://codepen.io/ogab/pen/peXpqW) and [repl.it](https://repl.it/HBzu/110).
 
 ## Project goal
 
-* **It should use all extant traditional game and divination suit names**…
-  * French/Anglo-American: Spades ♠️, Hearts ♥️, Diamonds ♦️, Clubs ♣️
-  * Latin/Spanish/Italian:  Swords ⚔️, Cups 🍵, Coins (Pentacles) 💰, Wands (Batons) 🏏
-  * German: Leaves, Hearts, Bells, Acorns
-  * Swiss: Shields, Roses, Bells, Acorns
-* …in **multiple languages**…
-  * English
+_Arcana_ should generate card decks in a variety of… 
+
+* **suits**…
   * French
-  * Spanish
-  * Italian
-  * German
-* …**colors**…
-  * 2-color: black and red
-  * 4-color: black, red, blue, green
-* …using **one or more instance of 81 possible cards**…
+    * ♠ Spades
+    * <span style="color:red;">♥ Hearts</span>
+    * <span style="color:red;">♦ Diamonds</span>
+    * ♣ Clubs
+  * Latin:
+    * ⚔️ Swords
+    * 🍷 Cups
+    * 🪙 Coins
+    * 🪄 Wands
+* **ranks**…
+* **patterns**…
+* and **colors**…
+  * 2-color: <b style="color:black;">black</b>, <b style="color:red;">red</b>
+  * 4-color: <b style="color:black;">black</b>, <b style="color:red;">red</b>, <b style="color:blue;">blue</b>, <b style="color:green;">green</b>
+* using one or more instances of **81 unique cards**…
   * 40 pip
   * 16 court
   * 3 jokers
   * 22 trumps
-* …within a **complete, stripped, or multi-pack deck**…
-* …with a **customizable card back**…
-* …and **be accessible for users with visual disabilities**.
-* **It should utilize all 82 Unicode card glyphs**.
-  * Since the 22 trump glyphs don't yet exist in any default macOS font, **it should include a card glyph webfont**: a subset of [Symbola](http://users.teilar.gr/~g1951d/Symbola.zip) from [George Douros](http://users.teilar.gr/~g1951d/) generated using [Font Squirrel's  Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator).
+* within a **complete, stripped, or multi-pack deck**…
+* with a **customizable card back**…
+* …and be **accessible** for users with visual disabilities.
 
-## Possible applications
+_Arcana_ includes a **webfont** with all 82 glyphs in Unicode's Playing Cards range (1F0A0–1F0FF) from _Symbola_ by George Douros, generated using [Font Squirrel's Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator).
+
+### Possible applications
 
 * gameplay
 * game design
@@ -102,7 +104,7 @@ Adding "Show All Card Backs/Faces" buttons and ability to click on cards to show
   * `renderCards()` method
   * `init()` method
 
-## References
+## References & Inspiration
 
 * <https://en.wikipedia.org/wiki/Minor_Arcana>
 * <https://en.wikipedia.org/wiki/Tarot_Nouveau>
@@ -110,9 +112,6 @@ Adding "Show All Card Backs/Faces" buttons and ability to click on cards to show
 * <https://en.wikipedia.org/wiki/Playing_cards_in_Unicode>
 * <http://www.unicode.org/charts/PDF/U1F0A0.pdf>
 * <http://www.cardmagic.info/know_more.htm>
-
-## Additional References & Inspiration
-
 * <http://www.egreenway.com/tarot/>
 * <http://www.tarotpedia.com/>
 * <http://www.ovdiyenko.com/>
