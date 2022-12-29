@@ -8,14 +8,14 @@ Based on experiments developed in [CodePen](https://codepen.io/ogab/pen/peXpqW) 
 
 ## Project goal
 
-_Arcana_ generates card decks in a variety of… 
+_Arcana_ generates card decks in a variety of…
 
 * **suits**…
-  * French
-    * ♠ Spades
-    * <span style="color:red;">♥ Hearts</span>
-    * <span style="color:red;">♦ Diamonds</span>
-    * ♣ Clubs
+  * French:
+    * <b style="color:black;">♠ Spades</b>
+    * <b style="color:red;">♥ Hearts</b>
+    * <b style="color:red;">♦ Diamonds</b>
+    * <b style="color:black;">♣ Clubs</b>
   * Latin:
     * ⚔️ Swords
     * 🍷 Cups
@@ -33,7 +33,7 @@ _Arcana_ generates card decks in a variety of…
   * 22 trumps
 * within a **complete, stripped, or multi-pack deck**…
 * with a **customizable card back**…
-* …and be **accessible** for users with visual disabilities.
+* and be **accessible** for users with visual disabilities.
 
 _Arcana_ includes a **webfont** with all 82 glyphs in Unicode's Playing Cards range (1F0A0–1F0FF) from _Symbola_ by George Douros, generated using [Font Squirrel's Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator).
 
@@ -52,6 +52,8 @@ _Arcana_ includes a **webfont** with all 82 glyphs in Unicode's Playing Cards ra
 
 #### 0.4.0
 
+[`arcana-0.4.0.js`](scripts/arcana-0.4.0.js):
+
 * Integrated [Web Speech API](https://github.com/mdn/web-speech-api): the name of a clicked card is spoken.
 * Converted trump card numbering from Roman to Arabic.
 * Added CSS class for card **rank**.
@@ -62,7 +64,7 @@ _Arcana_ includes a **webfont** with all 82 glyphs in Unicode's Playing Cards ra
 
 Adding "Show All Card Backs/Faces" buttons and ability to click on cards to show their faces.
 
-[*arcana-0.3.0.js*](scripts/arcana-0.3.0.js):
+[`arcana-0.3.0.js`](scripts/arcana-0.3.0.js):
 
 * `App` object
   * `DATA` array
@@ -77,7 +79,7 @@ Adding "Show All Card Backs/Faces" buttons and ability to click on cards to show
 
 #### 0.2.0
 
-[*arcana-0.2.0.js*](scripts/arcana-0.2.0.js):
+[`arcana-0.2.0.js`](scripts/arcana-0.2.0.js):
 
 * `App` object:
   * `DATA` object:
@@ -91,7 +93,7 @@ Adding "Show All Card Backs/Faces" buttons and ability to click on cards to show
 
 #### 0.1.0
 
-[*arcana-0.1.0.js*](scripts/arcana-0.1.0.js):
+[`arcana-0.1.0.js`](scripts/arcana-0.1.0.js):
 
 * `App` object:
   * `data` object:
