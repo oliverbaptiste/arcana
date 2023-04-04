@@ -72,14 +72,16 @@ export const arcana = {
 // minor arcana - suits
 console.log(arcana.minor.suits.french.S.symbol); // "♠"
 console.log(arcana.minor.suits.french.S.name.en); // spades
+console.log(arcana.minor.suits.french.S.name.fr); // pique
 console.log(arcana.minor.suits.latin.S.name.en); // swords
 console.log(arcana.minor.suits.latin.S.name.es); // espadas
 console.log(arcana.minor.suits.latin.S.name.it); // spade
 
 // minor arcana - pip
-console.log(arcana.minor.ranks.pip.PX.name.en); // "ace"
+console.log(arcana.minor.ranks.pip.PX.index); // "10"
+console.log(arcana.minor.ranks.pip.PX.name.en); // "ten"
 console.log(arcana.minor.ranks.pip.PX.name.es); // "diez"
-console.log(arcana.minor.ranks.pip.PX.name.fr); // "deux"
+console.log(arcana.minor.ranks.pip.PX.name.fr); // "dix"
 
 // minor arcana - court
 console.log(arcana.minor.ranks.court.CJ.name.en[0]); // "jack"
@@ -87,7 +89,7 @@ console.log(arcana.minor.ranks.court.CJ.name.es[0]); // "jota"
 console.log(arcana.minor.ranks.court.CJ.name.fr); // "valet"
 
 // major arcana - indices & themes
-console.log(arcana.major.T10.index[0]); // "10"
-console.log(arcana.major.T10.index[1]); // "X"
-console.log(arcana.major.T10.theme.nouveau.en); // "Earth & Air"
-console.log(arcana.major.T10.theme.rws.en); // "Wheel of Fortune"
+console.log(arcana.major.T13.index[0]); // "13"
+console.log(arcana.major.T13.index[1]); // "XIII"
+console.log(arcana.major.T13.theme.nouveau.en); // "Shopping"
+console.log(arcana.major.T13.theme.rws.en); // "Death"
