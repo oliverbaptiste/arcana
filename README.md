@@ -1,6 +1,6 @@
 # Arcana
 
-_Arcana_ is a tool for creating "Unicode" playing card decks.
+_Arcana_ is a JavaScript library for creating "Unicode" playing card decks.
 
 ![Arcana: the 81 Plaing Cards of Unicode](images/arcana-81-cards.png)
 
@@ -8,7 +8,7 @@ Based on experiments developed in [CodePen](https://codepen.io/ogab/pen/peXpqW) 
 
 ## Project goal
 
-_Arcana_ generates card decks in a variety of…
+_Arcana_ generates card decks for gameplay and divination with a variety of options, including:
 
 * **suits**…
   * French:
@@ -19,38 +19,45 @@ _Arcana_ generates card decks in a variety of…
   * Latin:
     * ⚔️ Swords
     * 🍷 Cups
-    * 🪙 Coins
-    * 🪄 Wands
+    * 🪙 Coins / Pentacles
+    * 🪄 Clubs / Wands
 * **ranks**…
 * **patterns**…
 * and **colors**…
   * 2-color: <b style="color:black;">black</b>, <b style="color:red;">red</b>
   * 4-color: <b style="color:black;">black</b>, <b style="color:red;">red</b>, <b style="color:blue;">blue</b>, <b style="color:green;">green</b>
 * using one or more instances of **81 unique cards**…
-  * 40 pip
-  * 16 court
+  * 40 pip cards
+  * 16 court/face cards
+  * 22 trump cards
   * 3 jokers
-  * 22 trumps
 * within a **complete, stripped, or multi-pack deck**…
-* with a **customizable card back**…
-* and be **accessible** for users with visual disabilities.
+* with customizable **card backs**…
+* and an attention to **a11y** / **i18n** / **L10n**
 
-_Arcana_ includes a **webfont** with all 82 glyphs in Unicode's Playing Cards range (1F0A0–1F0FF) from _Symbola_ by George Douros, generated using [Font Squirrel's Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator).
+_Arcana_ includes a **webfont with all 82 glyphs in Unicode's Playing Cards range** (`1F0A0`–`1F0FF`) — a subset of the _Symbola_ font by George Douros — generated using [Font Squirrel's Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator).
 
 ### Possible applications
 
 * gameplay
-* game design
 * divination
-* cardistry and magic utilities
-* history of playing cards and games
-* probability/statistical analysis
+* game design
+* card pattern design
+* historical playing card patterns and games
+* entertainment, cardistry & magic utilities
+* probability & statistical analysis
 
 ## About the code
 
 ### Current version
 
-#### 0.4.0
+#### 0.5.0 (in development)
+
+[`arcana-0.5.0.js`](scripts/arcana-0.5.0.js)
+
+* refactoring data structure
+
+#### 0.4.0 (current)
 
 [`arcana-0.4.0.js`](scripts/arcana-0.4.0.js):
 
