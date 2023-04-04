@@ -39,11 +39,10 @@ _Arcana_ includes a **webfont with all 82 glyphs in Unicode's Playing Cards rang
 
 ### Possible applications
 
-* gameplay
+* games
 * divination
-* game design
-* card pattern design
-* historical playing card patterns and games
+* card design
+* historical research
 * entertainment, cardistry & magic utilities
 * probability & statistical analysis
 
