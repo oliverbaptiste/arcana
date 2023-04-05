@@ -204,7 +204,10 @@ const arcana = {
       "index": ["1", "I"],
       "theme": {
         "marseilles": { "fr": "Le Bateleur" },
-        "nouveau": { "en": "Individual" },
+        "nouveau": {
+          "en": "Individual",
+          "fr": "Individuelle"
+        },
         "rws": { "en": "The Magician" }
       }
     },
