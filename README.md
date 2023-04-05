@@ -1,21 +1,19 @@
-# Arcana
+# arcana
 
-_Arcana_ is a JavaScript library for creating "Unicode" playing card decks.
+_arcana_ is a Unicode-aware JavaScript library for creating playing card decks.
 
 ![Arcana: the 81 Plaing Cards of Unicode](images/arcana-81-cards.png)
 
-Based on experiments developed in [CodePen](https://codepen.io/ogab/pen/peXpqW) and [repl.it](https://repl.it/HBzu/110).
-
 ## Project goal
 
-_Arcana_ generates card decks for gameplay and divination with a variety of options, including:
+_arcana_ generates card decks for gameplay and divination with a variety of options, including:
 
 * **suits**…
   * French:
-    * <b style="color:black;">♠ Spades</b>
-    * <b style="color:red;">♥ Hearts</b>
-    * <b style="color:red;">♦ Diamonds</b>
-    * <b style="color:black;">♣ Clubs</b>
+    * <i style="color:black;">♠</i> Spades
+    * <i style="color:red;">♥</i> Hearts
+    * <i style="color:red;">♦</i> Diamonds
+    * <i style="color:black;">♣</i> Clubs
   * Latin:
     * ⚔️ Swords
     * 🍷 Cups
@@ -24,26 +22,28 @@ _Arcana_ generates card decks for gameplay and divination with a variety of opti
 * **ranks**…
 * **patterns**…
 * and **colors**…
-  * 2-color: <b style="color:black;">black</b>, <b style="color:red;">red</b>
-  * 4-color: <b style="color:black;">black</b>, <b style="color:red;">red</b>, <b style="color:blue;">blue</b>, <b style="color:green;">green</b>
-* using one or more instances of **81 unique cards**…
-  * 40 pip cards
-  * 16 court/face cards
-  * 22 trump cards
-  * 3 jokers
-* within a **complete, stripped, or multi-pack deck**…
+  * 2-color: black, red
+  * 4-color: black, red, blue, green
+* using up to eight (8) instances of **81 unique card types**…
+  * the fifty-six (56) cards of the **Minor Arcana**:
+    * forty (40) **Pip** cards
+    * sixteen (16) **Court** cards
+  * the twenty-two (22) cards of the **Major Arcana**
+  * three (3) **Jokers**
+* to load a **complete, stripped, or multi-pack deck** into a dealing **shoe**…
 * with customizable **card backs**…
 * and an attention to **a11y** / **i18n** / **L10n**
 
-_Arcana_ includes a **webfont with all 82 glyphs in Unicode's Playing Cards range** (`1F0A0`–`1F0FF`) — a subset of the _Symbola_ font by George Douros — generated using [Font Squirrel's Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator).
+This project includes a **webfont** that contain all 82 glyphs in the [Playing Cards Unicode block](https://en.wikipedia.org/wiki/Playing_Cards_(Unicode_block)) (`U+1F0A0` – `U+1F0FF`). It is a subset of the [_Symbola_ font](https://fontlibrary.org/en/font/symbola) by [George Douros](https://dn-works.com/ufas/), exported using [Font Squirrel's Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator).
 
+For more information about how card data is organized, read [CARD_CODES.md](CARD_CODES.md).
 ### Possible applications
 
-* games
-* divination
-* card design
-* historical research
-* entertainment, cardistry & magic utilities
+* card games
+* cartomancy & divination
+* playing card pattern design
+* historical re-creation & research
+* cardistry & card magic utilities
 * probability & statistical analysis
 
 ## About the code
@@ -54,15 +54,15 @@ _Arcana_ includes a **webfont with all 82 glyphs in Unicode's Playing Cards rang
 
 [`arcana-0.5.0.js`](scripts/arcana-0.5.0.js)
 
-* refactoring data structure
+* Major data structure refactoring
 
 #### 0.4.0 (current)
 
 [`arcana-0.4.0.js`](scripts/arcana-0.4.0.js):
 
-* Integrated [Web Speech API](https://github.com/mdn/web-speech-api): the name of a clicked card is spoken.
+* Integrated [Web Speech API](https://github.com/mdn/web-speech-api) so the name of a card is read aloud when clicked.
 * Converted trump card numbering from Roman to Arabic.
-* Added CSS class for card **rank**.
+* Added CSS class for card `rank`.
 
 ### Previous versions
 
@@ -128,3 +128,9 @@ Adding "Show All Card Backs/Faces" buttons and ability to click on cards to show
 * <https://digitalcollections.nypl.org/collections/playing-cards-engineering#/?tab=about>
 * <https://archive.org/details/aen4317.0001.001.umich.edu>
 * <https://archive.org/details/cu31924029917576>
+
+Based on experiments developed in [CodePen](https://codepen.io/ogab/pen/peXpqW) and [repl.it](https://repl.it/HBzu/110).
+
+-----
+
+Last updated: 2023-04-04
