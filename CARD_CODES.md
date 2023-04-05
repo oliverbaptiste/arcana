@@ -6,7 +6,7 @@ The terms "pack" and "deck" are usually considered synonyms in the world of play
 
 A **pack** refers to a set of cards with a maximum of one (1) instance of any unique card type.
 
-A **deck** is generated using one or more packs. A better analogy might be a _dealer's shoe_ that has been loaded with multiple packs for a Power or Blackjack game.
+A **deck** is generated using one or more packs. A better analogy might be a _dealer's shoe_ that has been loaded with multiple packs for a Poker or Blackjack game.
 
 ## Card Type
 
