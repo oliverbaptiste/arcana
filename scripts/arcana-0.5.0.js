@@ -195,7 +195,10 @@ const arcana = {
         "marseilles": {
           "fr": ["Le Mat", "Le Fou", "Le Fol"]
         },
-        "nouveau": { "en": "Fool" },
+        "nouveau": {
+          "en": "Fool",
+          "fr": "L‘Excuse"
+        },
         "rws": { "en": "The Fool" }
       }
     },
