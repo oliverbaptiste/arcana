@@ -1,4 +1,4 @@
-export class Card {
+class Card {
   constructor(rank, suit, shortCode, lang) {
     this.rank = rank;
     this.suit = suit;
@@ -6,17 +6,16 @@ export class Card {
     this.lang = lang;
     this.name = this.getName(lang);
   }
-
 }
 
-export class Deck {
+class Deck {
   constructor(
-    lang = 'en',
+    lang = "en",
     includeKnights = false,
     includeMajorArcana = false,
     jokers = 0,
     strippedRanks = [],
-    strippedCards = [],
+    strippedCards = []
   ) {
     this.lang = lang;
     this.includeKnights = includeKnights;
@@ -29,39 +28,39 @@ export class Deck {
   }
   createDeck() {
     console.log("createDeck() invoked!");
+    console.log(`lang: ${this.lang}`);
     const suits = [
-      { 'name': { 'en': 'Hearts', 'fr': 'Cœurs' } },
-      { 'name': { 'en': 'Diamonds', 'fr': 'Carreaux' } },
-      { 'name': { 'en': 'Clubs', 'fr': 'Trèfles' } },
-      { 'name': { 'en': 'Spades', 'fr': 'Piques' } },
+      { name: { en: "Hearts", fr: "Cœurs" } },
+      { name: { en: "Diamonds", fr: "Carreaux" } },
+      { name: { en: "Clubs", fr: "Trèfles" } },
+      { name: { en: "Spades", fr: "Piques" } },
     ];
     const ranks = [
-      { 'index': 'A', name: { en: 'Ace', fr: 'As' } },
-      { 'index': '2', name: { en: 'Two', fr: 'Deux' } },
-      { 'index': '3', name: { en: 'Three', fr: 'Trois' } },
-      { 'index': '4', name: { en: 'Four', fr: 'Quatre' } },
-      { 'index': '5', name: { en: 'Five', fr: 'Cinq' } },
-      { 'index': '6', name: { en: 'Six', fr: 'Six' } },
-      { 'index': '7', name: { en: 'Seven', fr: 'Sept' } },
-      { 'index': '8', name: { en: 'Eight', fr: 'Huit' } },
-      { 'index': '9', name: { en: 'Nine', fr: 'Neuf' } },
-      { 'index': '10', name: { en: 'Ten', fr: 'Dix' } },
-      { 'index': 'J', name: { en: 'Jack', fr: 'Valet' } },
-      { 'index': 'C', name: { en: 'Knight', fr: 'Cavalier' } },
-      { 'index': 'Q', name: { en: 'Queen', fr: 'Dame' } },
-      { 'index': 'K', name: { en: 'King', fr: 'Roi' } },
+      { index: "A", name: { en: "Ace", fr: "As" } },
+      { index: "2", name: { en: "Two", fr: "Deux" } },
+      { index: "3", name: { en: "Three", fr: "Trois" } },
+      { index: "4", name: { en: "Four", fr: "Quatre" } },
+      { index: "5", name: { en: "Five", fr: "Cinq" } },
+      { index: "6", name: { en: "Six", fr: "Six" } },
+      { index: "7", name: { en: "Seven", fr: "Sept" } },
+      { index: "8", name: { en: "Eight", fr: "Huit" } },
+      { index: "9", name: { en: "Nine", fr: "Neuf" } },
+      { index: "10", name: { en: "Ten", fr: "Dix" } },
+      { index: "J", name: { en: "Jack", fr: "Valet" } },
+      { index: "C", name: { en: "Knight", fr: "Cavalier" } },
+      { index: "Q", name: { en: "Queen", fr: "Dame" } },
+      { index: "K", name: { en: "King", fr: "Roi" } },
     ];
-    console.log(`Language Code: ${this.lang}`);
-    suits.forEach((suit) =>{
+    suits.forEach((suit) => {
       console.log(`${suit.name[this.lang]}:`);
-      ranks.forEach((rank, index) => {
+      ranks.forEach((rank, i) => {
         const template = {
-          'en': `  ${rank.name.en} of ${suit.name.en}`,
-          'fr': `  ${rank.name.fr} de ${(suit.name.fr).replace(/.$/, '').toLowerCase()}`,
+          en: `  (${rank.index})\t${rank.name.en} of ${suit.name.en}`,
+          fr: `  (${rank.index})\t ${rank.name.fr} de ${suit.name.fr
+            .replace(/.$/, "")
+            .toLowerCase()}`,
         };
-        if (index === 11 && this.includeKnights === false) {
-          console.log(`->Skipping Knight rank!`);
-        } else {
+        if (i !== 11 || (i === 11 && this.includeKnights === true)) {
           console.log(template[this.lang]);
         }
       });
@@ -73,10 +72,12 @@ export class Deck {
       console.log(`Adding ${this.jokers} Joker card(s) to deck!`);
     }
     if (this.strippedRanks === undefined || this.strippedRanks.length === 0) {
-      console.log('**strippedRanks: false**');
+      console.log("**strippedRanks: false**");
     }
     if (this.strippedCards === undefined || this.strippedCards.length === 0) {
-      console.log('**strippedCards: false**');
-    };
+      console.log("**strippedCards: false**");
+    }
   }
 }
+
+export { Card, Deck };
