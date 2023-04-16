@@ -1,10 +1,9 @@
+import data from "./data-0.6.js";
+
 class Card {
-  constructor(rank, suit, shortCode, lang) {
+  constructor(rank, suit) {
     this.rank = rank;
     this.suit = suit;
-    this.shortCode = shortCode;
-    this.lang = lang;
-    this.name = this.getName(lang);
   }
 }
 
@@ -23,59 +22,37 @@ class Deck {
     this.jokers = jokers;
     this.strippedRanks = strippedRanks;
     this.strippedCards = strippedCards;
-    this.cards = [];
     this.createDeck();
   }
   createDeck() {
-    console.log("createDeck() invoked!");
-    console.log(`lang: ${this.lang}`);
-    const suits = [
-      { name: { en: "Hearts", fr: "Cœurs" } },
-      { name: { en: "Diamonds", fr: "Carreaux" } },
-      { name: { en: "Clubs", fr: "Trèfles" } },
-      { name: { en: "Spades", fr: "Piques" } },
-    ];
-    const ranks = [
-      { index: "A", name: { en: "Ace", fr: "As" } },
-      { index: "2", name: { en: "Two", fr: "Deux" } },
-      { index: "3", name: { en: "Three", fr: "Trois" } },
-      { index: "4", name: { en: "Four", fr: "Quatre" } },
-      { index: "5", name: { en: "Five", fr: "Cinq" } },
-      { index: "6", name: { en: "Six", fr: "Six" } },
-      { index: "7", name: { en: "Seven", fr: "Sept" } },
-      { index: "8", name: { en: "Eight", fr: "Huit" } },
-      { index: "9", name: { en: "Nine", fr: "Neuf" } },
-      { index: "10", name: { en: "Ten", fr: "Dix" } },
-      { index: "J", name: { en: "Jack", fr: "Valet" } },
-      { index: "C", name: { en: "Knight", fr: "Cavalier" } },
-      { index: "Q", name: { en: "Queen", fr: "Dame" } },
-      { index: "K", name: { en: "King", fr: "Roi" } },
-    ];
-    suits.forEach((suit) => {
-      console.log(`${suit.name[this.lang]}:`);
-      ranks.forEach((rank, i) => {
-        const template = {
-          en: `  (${rank.index})\t${rank.name.en} of ${suit.name.en}`,
-          fr: `  (${rank.index})\t ${rank.name.fr} de ${suit.name.fr
-            .replace(/.$/, "")
-            .toLowerCase()}`,
-        };
-        if (i !== 11 || (i === 11 && this.includeKnights === true)) {
-          console.log(template[this.lang]);
+    console.log("\nAdding Minor Arcana to deck…");
+    console.log("----");
+    const d = data;
+    d.minor.suits.french.forEach((suit) => {
+      d.minor.ranks.forEach((rank, i) => {
+        if (rank.index !== "C" || (rank.index === "C" && this.includeKnights === true)) {
+          console.log(`${suit.cardGlyphs[i]} — ${rank.name.en} of ${suit.name.en}`);
         }
       });
     });
     if (this.includeMajorArcana) {
-      console.log("Adding Major Arcana to deck!");
+      console.log("\nAdding Major Arcana to deck…");
+      console.log("----");
+      d.major.forEach((t, i) => {
+        console.log(i, t);
+      });
     }
     if (this.jokers) {
-      console.log(`Adding ${this.jokers} Joker card(s) to deck!`);
+      console.log(`\nAdding ${this.jokers} Joker card(s) to deck…`);
+      console.log("----");
+    } else {
+      console.log("* No jokers added to deck!");
     }
     if (this.strippedRanks === undefined || this.strippedRanks.length === 0) {
-      console.log("**strippedRanks: false**");
+      console.log("* No ranks stripped from deck!");
     }
     if (this.strippedCards === undefined || this.strippedCards.length === 0) {
-      console.log("**strippedCards: false**");
+      console.log("* No cards stripped from deck!");
     }
   }
 }
