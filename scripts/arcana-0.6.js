@@ -191,7 +191,7 @@ const arcana = {
     major: [
       {
         glyph: "\u{1F0E0}",
-        index: [null, "0"],
+        index: ["", "0"],
         theme: {
           marseilles: {
             fr: ["Le Mat", "Le Fou", "Le Fol"],
@@ -506,7 +506,7 @@ deck.forEach((elem, i) => {
         : ""
     }${
       elem.cardType === "major"
-        ? `${elem.index[0]} - ${elem.theme.nouveau.en}`
+        ? `${elem.index[0]} _${elem.theme.nouveau.en}_`
         : ""
     }${elem.cardType === "joker" ? elem.name.en + " Joker" : ""} |`
   );
