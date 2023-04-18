@@ -19,6 +19,7 @@ const arcana = {
           (rank.index === "C" && includeKnights === true)
         ) {
           let card = {
+            code: `${suit.code}${rank.code}`,
             rank: rank,
             suit: {
               symbol: suit.symbol,
@@ -55,7 +56,8 @@ const arcana = {
     minor: {
       suits: {
         french: [
-          {
+          { 
+            code: "s",
             index: ["\u{2660}", "\u{2664}"],
             name: { en: "Spades", fr: "Piques" },
             cardGlyphs: [
@@ -76,6 +78,7 @@ const arcana = {
             ],
           },
           {
+            code: "h",
             index: ["\u{2665}", "\u{2661}"],
             name: { en: "Hearts", fr: "Cœurs" },
             cardGlyphs: [
@@ -96,6 +99,7 @@ const arcana = {
             ],
           },
           {
+            code: "d",
             index: ["\u2666", "\u2662"],
             name: { en: "Diamonds", fr: "Carreaux" },
             cardGlyphs: [
@@ -116,6 +120,7 @@ const arcana = {
             ],
           },
           {
+            code: "c",
             index: ["\u2663", "\u2667"],
             name: { en: "Clubs", fr: "Trèfles" },
             cardGlyphs: [
@@ -138,22 +143,16 @@ const arcana = {
         ],
         latin: [
           {
+            code: "s",
             name: {
-              en: ["clubs", "wands"],
-              es: "bastos",
-              fr: "bâton",
-              it: "bastoni",
+              en: "swords",
+              es: "espadas",
+              fr: "épée",
+              it: "spade",
             },
           },
           {
-            name: {
-              en: ["coins", "pentacles"],
-              es: "oros",
-              fr: "denier",
-              it: "denari",
-            },
-          },
-          {
+            code: "h",
             name: {
               en: "cups",
               es: "copas",
@@ -162,34 +161,45 @@ const arcana = {
             },
           },
           {
+            code: "d",
             name: {
-              en: "swords",
-              es: "espadas",
-              fr: "épée",
-              it: "spade",
+              en: ["coins", "pentacles"],
+              es: "oros",
+              fr: "denier",
+              it: "denari",
+            },
+          },
+          {
+            code: "c",
+            name: {
+              en: ["clubs", "wands"],
+              es: "bastos",
+              fr: "bâton",
+              it: "bastoni",
             },
           },
         ],
       },
       ranks: [
-        { index: "A", name: { en: "Ace", fr: "As" } },
-        { index: "2", name: { en: "Two", fr: "Deux" } },
-        { index: "3", name: { en: "Three", fr: "Trois" } },
-        { index: "4", name: { en: "Four", fr: "Quatre" } },
-        { index: "5", name: { en: "Five", fr: "Cinq" } },
-        { index: "6", name: { en: "Six", fr: "Six" } },
-        { index: "7", name: { en: "Seven", fr: "Sept" } },
-        { index: "8", name: { en: "Eight", fr: "Huit" } },
-        { index: "9", name: { en: "Nine", fr: "Neuf" } },
-        { index: "10", name: { en: "Ten", fr: "Dix" } },
-        { index: "J", name: { en: "Jack", fr: "Valet" } },
-        { index: "C", name: { en: "Knight", fr: "Cavalier" } },
-        { index: "Q", name: { en: "Queen", fr: "Dame" } },
-        { index: "K", name: { en: "King", fr: "Roi" } },
+        { code: "A", index: "A", name: { en: "Ace", fr: "As" } },
+        { code: "2", index: "2", name: { en: "Two", fr: "Deux" } },
+        { code: "3", index: "3", name: { en: "Three", fr: "Trois" } },
+        { code: "4", index: "4", name: { en: "Four", fr: "Quatre" } },
+        { code: "5", index: "5", name: { en: "Five", fr: "Cinq" } },
+        { code: "6", index: "6", name: { en: "Six", fr: "Six" } },
+        { code: "7", index: "7", name: { en: "Seven", fr: "Sept" } },
+        { code: "8", index: "8", name: { en: "Eight", fr: "Huit" } },
+        { code: "9", index: "9", name: { en: "Nine", fr: "Neuf" } },
+        { code: "T", index: "10", name: { en: "Ten", fr: "Dix" } },
+        { code: "J", index: "J", name: { en: "Jack", fr: "Valet" } },
+        { code: "C", index: "C", name: { en: "Knight", fr: "Cavalier" } },
+        { code: "Q", index: "Q", name: { en: "Queen", fr: "Dame" } },
+        { code: "K", index: "K", name: { en: "King", fr: "Roi" } },
       ],
     },
     major: [
       {
+        code: "t00",
         glyph: "\u{1F0E0}",
         index: "0",
         theme: {
@@ -204,6 +214,7 @@ const arcana = {
         },
       },
       {
+        code: "t01",
         glyph: "\u{1F0E1}",
         index: ["1", "I"],
         theme: {
@@ -216,6 +227,7 @@ const arcana = {
         },
       },
       {
+        code: "t02",
         glyph: "\u{1F0E2}",
         index: ["2", "II"],
         theme: {
@@ -228,6 +240,7 @@ const arcana = {
         },
       },
       {
+        code: "t03",
         glyph: "\u{1F0E3}",
         index: ["3", "III"],
         theme: {
@@ -240,6 +253,7 @@ const arcana = {
         },
       },
       {
+        code: "t04",
         glyph: "\u{1F0E4}",
         index: ["4", "IV"],
         theme: {
@@ -252,6 +266,7 @@ const arcana = {
         },
       },
       {
+        code: "t05",
         glyph: "\u{1F0E5}",
         index: ["5", "V"],
         theme: {
@@ -264,6 +279,7 @@ const arcana = {
         },
       },
       {
+        code: "t06",
         glyph: "\u{1F0E6}",
         index: ["6", "VI"],
         theme: {
@@ -276,6 +292,7 @@ const arcana = {
         },
       },
       {
+        code: "t07",
         glyph: "\u{1F0E7}",
         index: ["7", "VI"],
         theme: {
@@ -288,6 +305,7 @@ const arcana = {
         },
       },
       {
+        code: "t08",
         glyph: "\u{1F0E8}",
         index: ["8", "VIII"],
         theme: {
@@ -300,6 +318,7 @@ const arcana = {
         },
       },
       {
+        code: "t09",
         glyph: "\u{1F0E9}",
         index: ["9", "IX"],
         theme: {
@@ -312,6 +331,7 @@ const arcana = {
         },
       },
       {
+        code: "t10",
         glyph: "\u{1F0EA}",
         index: ["10", "X"],
         theme: {
@@ -324,6 +344,7 @@ const arcana = {
         },
       },
       {
+        code: "t11",
         glyph: "\u{1F0EB}",
         index: ["11", "XI"],
         theme: {
@@ -336,6 +357,7 @@ const arcana = {
         },
       },
       {
+        code: "t12",
         glyph: "\u{1F0EC}",
         index: ["12", "XII"],
         theme: {
@@ -348,11 +370,12 @@ const arcana = {
         },
       },
       {
+        code: "t13",
         glyph: "\u{1F0ED}",
         index: ["13", "XIII"],
         theme: {
           marseilles: {
-            fr: ["L’Arcane sans Nom", "La Mort"],
+            fr: ["L’Arcane sans nom", "La Mort"],
           },
           nouveau: {
             en: "Shopping",
@@ -362,6 +385,7 @@ const arcana = {
         },
       },
       {
+        code: "t14",
         glyph: "\u{1F0EE}",
         index: ["14", "XIV"],
         theme: {
@@ -374,6 +398,7 @@ const arcana = {
         },
       },
       {
+        code: "t15",
         glyph: "\u{1F0EF}",
         index: ["15", "XV"],
         theme: {
@@ -386,6 +411,7 @@ const arcana = {
         },
       },
       {
+        code: "t16",
         glyph: "\u{1F0F0}",
         index: ["16", "XVI"],
         theme: {
@@ -398,6 +424,7 @@ const arcana = {
         },
       },
       {
+        code: "t17",
         glyph: "\u{1F0F1}",
         index: ["17", "XVII"],
         theme: {
@@ -410,6 +437,7 @@ const arcana = {
         },
       },
       {
+        code: "t18",
         glyph: "\u{1F0F2}",
         index: ["18", "XVIII"],
         theme: {
@@ -422,6 +450,7 @@ const arcana = {
         },
       },
       {
+        code: "t19",
         glyph: "\u{1F0F3}",
         index: ["19", "XIX"],
         theme: {
@@ -434,6 +463,7 @@ const arcana = {
         },
       },
       {
+        code: "t20",
         glyph: "\u{1F0F4}",
         index: ["20", "XX"],
         theme: {
@@ -446,6 +476,7 @@ const arcana = {
         },
       },
       {
+        code: "t21",
         glyph: "\u{1F0F5}",
         index: ["21", "XXI"],
         theme: {
@@ -460,14 +491,17 @@ const arcana = {
     ],
     jokers: [
       {
+        code: "jB",
         name: { en: "Black" },
         glyph: "\u{1F0BF}",
       },
       {
+        code: "jR",
         name: { en: "Red" },
         glyph: "\u{1F0CF}",
       },
       {
+        code: "jW",
         name: { en: "White" },
         glyph: "\u{1F0DF}",
       },
@@ -496,11 +530,11 @@ var deck = arcana.createDeck();
 console.log(`
 Cards pushed to \`deck\` array:
 
-| №   | Glyph | Type | Name |
-| --- | ----- | ---- | ---- |`);
+| №   | Code | Glyph | Type | Name |
+| --- | ---- | ----- | ---- | ---- |`);
 deck.forEach((elem, i) => {
   console.log(
-    `| ${i + 1} | ${elem.glyph} | ${elem.cardType} | ${
+    `| ${i + 1} | ${elem.code} | ${elem.glyph} | ${elem.cardType} | ${
       elem.cardType === "minor"
         ? elem.rank.name.en + " of " + elem.suit.name.en
         : ""
