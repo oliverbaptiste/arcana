@@ -5,7 +5,7 @@ const arcana = {
     suitType = "french",
     includeKnights = true,
     includeMajorArcana = true,
-    jokers = 0,
+    jokers = 3,
     strippedCards = [],
     strippedRanks = []
   ) {
@@ -191,7 +191,7 @@ const arcana = {
     major: [
       {
         glyph: "\u{1F0E0}",
-        index: ["", "0"],
+        index: "0",
         theme: {
           marseilles: {
             fr: ["Le Mat", "Le Fou", "Le Fol"],
@@ -506,7 +506,7 @@ deck.forEach((elem, i) => {
         : ""
     }${
       elem.cardType === "major"
-        ? `${elem.index[0]} _${elem.theme.nouveau.en}_`
+        ? `${elem.index[0]} — ${elem.theme.nouveau.en}`
         : ""
     }${elem.cardType === "joker" ? elem.name.en + " Joker" : ""} |`
   );
