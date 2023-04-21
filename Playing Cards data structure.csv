@@ -1,89 +1,82 @@
-,RANKS,,,,,,
-SUITS,code,index,name en,,,,
-"Spades
-s",A,A,Ace,,,,
-,2,2,Two,,,,
-,3,3,Three,,,,
-,4,4,Four,,,,
-,5,5,Five,,,,
-,6,6,Six,,,,
-,7,7,Seven,,,,
-,8,8,Eight,,,,
-,9,9,Nine,,,,
-,T,10,Ten,,,,
-,J,J,Jack,,,,
-,C,C,Knight,,,,
-,Q,Q,Queen,,,,
-,K,K,King,,,,
-"Hearts
-h",A,A,Ace,,,,
-,2,2,Two,,,,
-,3,3,Three,,,,
-,4,4,Four,,,,
-,5,5,Five,,,,
-,6,6,Six,,,,
-,7,7,Seven,,,,
-,8,8,Eight,,,,
-,9,9,Nine,,,,
-,T,10,Ten,,,,
-,J,J,Jack,,,,
-,C,C,Knight,,,,
-,Q,Q,Queen,,,,
-,K,K,King,,,,
-"Diamonds
-d",A,A,Ace,,,,
-,2,2,Two,,,,
-,3,3,Three,,,,
-,4,4,Four,,,,
-,5,5,Five,,,,
-,6,6,Six,,,,
-,7,7,Seven,,,,
-,8,8,Eight,,,,
-,9,9,Nine,,,,
-,T,10,Ten,,,,
-,J,J,Jack,,,,
-,C,C,Knight,,,,
-,Q,Q,Queen,,,,
-,K,K,King,,,,
-"Clubs
-c",A,A,Ace,,,,
-,2,2,Two,,,,
-,3,3,Three,,,,
-,4,4,Four,,,,
-,5,5,Five,,,,
-,6,6,Six,,,,
-,7,7,Seven,,,,
-,8,8,Eight,,,,
-,9,9,Nine,,,,
-,T,10,Ten,,,,
-,J,J,Jack,,,,
-,C,C,Knight,,,,
-,Q,Q,Queen,,,,
-,K,K,King,,,,
-"Trumps
-t",00,0,Fool,,,,
-,01,1,,,,,
-,02,2,,,,,
-,03,3,,,,,
-,04,4,,,,,
-,05,5,,,,,
-,06,6,,,,,
-,07,7,,,,,
-,08,8,,,,,
-,09,9,,,,,
-,10,10,,,,,
-,11,11,,,,,
-,12,12,,,,,
-,13,13,,,,,
-,14,14,,,,,
-,15,15,,,,,
-,16,16,,,,,
-,17,17,,,,,
-,18,18,,,,,
-,19,19,,,,,
-,20,20,,,,,
-,21,21,,,,,
-"Jokers
-j",B,★,Black,,,,
-,R,★,Red,,,,
-,W,☆,White,,,,
+SUITS,code,index,name
+Spades (s),A,A,Ace
+Spades (s),2,2,Two
+Spades (s),3,3,Three
+Spades (s),4,4,Four
+Spades (s),5,5,Five
+Spades (s),6,6,Six
+Spades (s),7,7,Seven
+Spades (s),8,8,Eight
+Spades (s),9,9,Nine
+Spades (s),T,10,Ten
+Spades (s),J,J,Jack
+Spades (s),C,C,Knight
+Spades (s),Q,Q,Queen
+Spades (s),K,K,King
+Hearts (h),A,A,Ace
+Hearts (h),2,2,Two
+Hearts (h),3,3,Three
+Hearts (h),4,4,Four
+Hearts (h),5,5,Five
+Hearts (h),6,6,Six
+Hearts (h),7,7,Seven
+Hearts (h),8,8,Eight
+Hearts (h),9,9,Nine
+Hearts (h),T,10,Ten
+Hearts (h),J,J,Jack
+Hearts (h),C,C,Knight
+Hearts (h),Q,Q,Queen
+Hearts (h),K,K,King
+Diamonds (d),A,A,Ace
+Diamonds (d),2,2,Two
+Diamonds (d),3,3,Three
+Diamonds (d),4,4,Four
+Diamonds (d),5,5,Five
+Diamonds (d),6,6,Six
+Diamonds (d),7,7,Seven
+Diamonds (d),8,8,Eight
+Diamonds (d),9,9,Nine
+Diamonds (d),T,10,Ten
+Diamonds (d),J,J,Jack
+Diamonds (d),C,C,Knight
+Diamonds (d),Q,Q,Queen
+Diamonds (d),K,K,King
+Clubs (c),A,A,Ace
+Clubs (c),2,2,Two
+Clubs (c),3,3,Three
+Clubs (c),4,4,Four
+Clubs (c),5,5,Five
+Clubs (c),6,6,Six
+Clubs (c),7,7,Seven
+Clubs (c),8,8,Eight
+Clubs (c),9,9,Nine
+Clubs (c),T,10,Ten
+Clubs (c),J,J,Jack
+Clubs (c),C,C,Knight
+Clubs (c),Q,Q,Queen
+Clubs (c),K,K,King
+Trumps (t),00,0,Fool
+Trumps (t),01,1,1
+Trumps (t),02,2,2
+Trumps (t),03,3,3
+Trumps (t),04,4,4
+Trumps (t),05,5,5
+Trumps (t),06,6,6
+Trumps (t),07,7,7
+Trumps (t),08,8,8
+Trumps (t),09,9,9
+Trumps (t),10,10,10
+Trumps (t),11,11,11
+Trumps (t),12,12,12
+Trumps (t),13,13,13
+Trumps (t),14,14,14
+Trumps (t),15,15,15
+Trumps (t),16,16,16
+Trumps (t),17,17,17
+Trumps (t),18,18,18
+Trumps (t),19,19,19
+Trumps (t),20,20,20
+Trumps (t),21,21,21
+Jokers (j),B,★,Black
+Jokers (j),R,★,Red
+Jokers (j),W,☆,White
